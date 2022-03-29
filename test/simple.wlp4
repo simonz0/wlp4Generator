@@ -1,0 +1,34 @@
+int fun(int * a, int b) {
+    int* c = NULL;
+    int *d = NULL;
+    int e = 1;
+    int f = 2;
+    e = 0;
+    while(e < b) {
+        println(*(a+e) + 10);
+        e = e + 1;
+    }
+    return 0;
+}
+
+
+int foo(int * a, int b) {
+    int* c = NULL;
+    int *d = NULL;
+    int e = 1;
+    int f = 2;
+    e = 0;
+    while(e < b) {
+        println(*(a+e));
+        e = e + 1;
+    }
+    f = fun(a, b);
+    return 0;
+}
+
+int wain (int* a, int b) {
+    int c = 0;
+    c = foo(a, b);
+    
+    return c;
+}
